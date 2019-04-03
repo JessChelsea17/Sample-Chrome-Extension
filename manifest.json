@@ -1,0 +1,35 @@
+  {
+    "name": "Sample Extension",
+    "version": "1.0",
+    "description": "Hello World",
+    "permissions": ["activeTab", "storage", "tabs", "identity"],
+    "author": "Jess",
+    "icons": {
+      "48": "images/strawberry_48x48.png",
+      "128": "images/strawberry_128x128.png"
+    },
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+    "content_scripts": [{
+      "matches": ["file:///*"],
+      "js"     : ["popup.js"]
+    }],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": "images/strawberry_16x16.png",
+      "default_title": "Have a good day"
+    },
+    "chrome_url_overrides": {
+      "newtab": "newtab.html"
+    },
+    "oauth2": {
+      "client_id": "94190303205-7dd68jakp5gvujcnk1o4k1oidpljses4.apps.googleusercontent.com",
+      "scopes": [
+          "https://www.googleapis.com/auth/userinfo.email",
+          "https://www.googleapis.com/auth/spreadsheets"
+     ]},
+    "content_security_policy": "script-src 'self' 'unsafe-eval' https://apis.google.com/; object-src 'self'",
+    "manifest_version": 2
+  }
