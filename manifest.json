@@ -25,7 +25,7 @@
       "newtab": "newtab.html"
     },
     "oauth2": {
-      "client_id": "94190303205-7dd68jakp5gvujcnk1o4k1oidpljses4.apps.googleusercontent.com",
+      "client_id": "<client_ID>",
       "scopes": [
           "https://www.googleapis.com/auth/userinfo.email",
           "https://www.googleapis.com/auth/spreadsheets"
