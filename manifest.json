@@ -25,10 +25,15 @@
       "newtab": "newtab.html"
     },
     "oauth2": {
-      "client_id": "<client_ID>",
+      "client_id": "[Client_ID]",
       "scopes": [
           "https://www.googleapis.com/auth/userinfo.email",
-          "https://www.googleapis.com/auth/spreadsheets"
+          "https://www.googleapis.com/auth/spreadsheets",
+          "https://www.googleapis.com/auth/contacts.readonly",
+          "https://www.googleapis.com/auth/drive",
+          "https://www.googleapis.com/auth/drive.readonly",
+          "https://www.googleapis.com/auth/drive.file",
+          "https://www.googleapis.com/auth/spreadsheets.readonly"
      ]},
     "content_security_policy": "script-src 'self' 'unsafe-eval' https://apis.google.com/; object-src 'self'",
     "manifest_version": 2
