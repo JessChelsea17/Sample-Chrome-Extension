@@ -1,6 +1,6 @@
 # Sample-Chrome-Extension
 
-Functionalities:
+Features:
 
 1. This is a sample Chrome Extension that successfully returns token using Google OAuth
 2. It successfully call API request using Google Sheets API (GET and PUT). 
